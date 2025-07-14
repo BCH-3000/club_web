@@ -20,19 +20,23 @@ nav ul {
   justify-content: center;
   padding: 0;
   margin-top: 1rem;
+  flex-wrap: wrap;
 }
 
 nav li {
-  margin: 0 1rem;
+  margin: 0.5rem 1rem;
 }
 
 nav a {
   color: #f0e6d2;
   text-decoration: none;
+  font-size: 1rem;
 }
 
 main {
   padding: 2rem;
+  max-width: 900px;
+  margin: auto;
 }
 
 section {
@@ -48,10 +52,12 @@ h1, h2, h3 {
   padding: 1rem;
   border-left: 6px solid #a68c6d;
   margin-bottom: 1rem;
+  border-radius: 4px;
 }
 
 a {
   color: #8b5c2c;
+  word-break: break-word;
 }
 
 footer {
@@ -59,4 +65,41 @@ footer {
   color: white;
   text-align: center;
   padding: 1rem;
+  font-size: 0.9rem;
+}
+
+/* スマホ対応 */
+@media screen and (max-width: 768px) {
+  nav ul {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  nav li {
+    margin: 0.5rem 0;
+  }
+
+  main {
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  h3 {
+    font-size: 1.1rem;
+  }
+
+  .event {
+    font-size: 0.95rem;
+  }
+
+  footer {
+    font-size: 0.8rem;
+  }
 }
