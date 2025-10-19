@@ -43,7 +43,11 @@ section {
   margin-bottom: 3rem;
 }
 
-h1, h2, h3 {
+h1 {
+  color: white; /* または #f0e6d2 */
+}
+
+h2, h3 {
   color: #5b4636;
 }
 
